@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <title>Candice</title>
+  
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="/static/css/home.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <img />
+    <center>
+      <h1>
+        医疗辅助问诊系统
+      </h1>
+    </center>
+    <div class="box"></div>
+    <div class="boxed">
+      <div>
+        <div id="chatbox">
+          <img
+            src="/static/img/3.png"
+            alt="doc"
+            style="width:80px;height:80px;"
+          />
+          <p class="botText">
+            <span>您好，请问宝宝有什么不舒服的吗？</span>
+          </p>
+        </div>
+        <div id="userInput">
+          <input id="textInput" type="text" name="msg" placeholder="请输入..." />
+        </div>
+      </div>
+      <script>
+        
+        
+        var test1 = setTimeout(function(){
+          stop()
+        },60000);
+
+
+        function getBotResponse() {
+          clearTimeout(test1);
+          
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document
+            .getElementById("userInput")
+            .scrollIntoView({ block: "start", behavior: "smooth" });
+            
+          $.get("/get", { msg: rawText }).done(function(data) {
+
+            for(var key in data){
+
+            var botHtml = '<p class="botText"><span>' + key + "</span></p>";
+            $("#chatbox").append(botHtml);
+            document
+              .getElementById("userInput")
+              .scrollIntoView({ block: "start", behavior: "smooth" });
+          }           
+          });
+
+          test1 = setTimeout(function(){
+          stop()
+          },60000);
+
+
+        }
+        function stop() {
+          var key = '您还在吗，如果您超过五分钟不回复，系统会自动关闭对话哦~'
+          var botHtml = '<p class="botText"><span>' + key + "</span></p>";
+          $("#chatbox").append(botHtml);
+          document
+              .getElementById("userInput")
+              .scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+
+        $("#textInput").keypress(function(e) {
+          if (e.which == 13) {//13即是回车
+            getBotResponse();
+            
+            
+
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>
