@@ -1,0 +1,2156 @@
+ {"10252291": {
+        "diagnosis": "小儿支气管炎",
+        "self_report": "血常规都正常，医生说是流感，开了5天达菲的量，孩子吃完老恶心，已经吃了3天，发烧症状好转，就是肺部有罗音，可不可以做个雾化，达菲停了。",
+        "dialogue": [
+            {
+                "sentence_id": "1",
+                "speaker": "医生",
+                "sentence": "你好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "2",
+                "speaker": "医生",
+                "sentence": "我是您的接诊医生",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "3",
+                "speaker": "患者",
+                "sentence": "您好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "4",
+                "speaker": "医生",
+                "sentence": "宝贝主要是什么感冒症状？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O B-Symptom I-Symptom O O O",
+                "symptom_norm": [
+                    "感冒"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "5",
+                "speaker": "患者",
+                "sentence": "午睡起来或夜里就发烧，吃了达菲，症状减轻了，但副作用太大，孩子恶心吃不下饭，我想停药",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O O O O B-Symptom I-Symptom O O O O O O O O O O O O O O O O O O O O O B-Symptom I-Symptom O O O O O O O O O",
+                "symptom_norm": [
+                    "发热",
+                    "恶心"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "6",
+                "speaker": "医生",
+                "sentence": "嗯啊",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "7",
+                "speaker": "患者",
+                "sentence": "肺部有杂音，今天去做个雾化",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O O O O O O O B-Operation I-Operation",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "8",
+                "speaker": "医生",
+                "sentence": "宝贝现在体温稳定了吗",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "9",
+                "speaker": "医生",
+                "sentence": "嗯啊",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "10",
+                "speaker": "患者",
+                "sentence": "稳定的",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "11",
+                "speaker": "医生",
+                "sentence": "嗯啊，咳嗽呢？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O B-Symptom I-Symptom O O",
+                "symptom_norm": [
+                    "咳嗽"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "12",
+                "speaker": "医生",
+                "sentence": "咳嗽有几天了",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "B-Symptom I-Symptom O O O O",
+                "symptom_norm": [
+                    "咳嗽"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "13",
+                "speaker": "患者",
+                "sentence": "咳嗽是发病后三天开始的，咳了两天",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "B-Symptom I-Symptom O O O O O O O O O O B-Symptom O O O",
+                "symptom_norm": [
+                    "咳嗽",
+                    "咳嗽"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "14",
+                "speaker": "医生",
+                "sentence": "嗯啊",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "15",
+                "speaker": "医生",
+                "sentence": "现在咳嗽还勤吗",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O B-Symptom I-Symptom O O O",
+                "symptom_norm": [
+                    "咳嗽"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "16",
+                "speaker": "患者",
+                "sentence": "咳嗽还好，就是肺部有杂音",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "B-Symptom I-Symptom O O O O O O O O O O",
+                "symptom_norm": [
+                    "咳嗽"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "17",
+                "speaker": "医生",
+                "sentence": "嗯啊",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "18",
+                "speaker": "医生",
+                "sentence": "啰音，对吗",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "19",
+                "speaker": "医生",
+                "sentence": "有痰吗？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O B-Symptom O O",
+                "symptom_norm": [
+                    "痰"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "20",
+                "speaker": "患者",
+                "sentence": "是的，有痰",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O B-Symptom",
+                "symptom_norm": [
+                    "痰"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "21",
+                "speaker": "医生",
+                "sentence": "宝贝什么时候看的医生？",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "22",
+                "speaker": "患者",
+                "sentence": "本周四晚上",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "23",
+                "speaker": "医生",
+                "sentence": "做过什么检查吗",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O B-Medical_Examination I-Medical_Examination O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "24",
+                "speaker": "患者",
+                "sentence": "血常规",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "B-Medical_Examination I-Medical_Examination I-Medical_Examination",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "25",
+                "speaker": "医生",
+                "sentence": "还有其他的吗",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "26",
+                "speaker": "患者",
+                "sentence": "肺部听诊",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "B-Medical_Examination I-Medical_Examination I-Medical_Examination I-Medical_Examination",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "27",
+                "speaker": "患者",
+                "sentence": "没了",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "28",
+                "speaker": "医生",
+                "sentence": "嗯啊",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "29",
+                "speaker": "医生",
+                "sentence": "宝贝之后怎么治疗的？",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "30",
+                "speaker": "患者",
+                "sentence": "吃达菲",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "O B-Drug I-Drug",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "31",
+                "speaker": "医生",
+                "sentence": "现在做雾化治疗的吗",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O B-Operation I-Operation O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "32",
+                "speaker": "医生",
+                "sentence": "宝贝越小痰化的越慢",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "33",
+                "speaker": "患者",
+                "sentence": "没有今天计划去",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "34",
+                "speaker": "患者",
+                "sentence": "达菲可不可以停了",
+                "dialogue_act": "Request-Drug_Recommendation",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "35",
+                "speaker": "医生",
+                "sentence": "嗯啊，去让面诊医生再听诊一下",
+                "dialogue_act": "Inform-Medical_Advice",
+                "BIO_label": "O O O O O O O O O O B-Medical_Examination I-Medical_Examination O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            }
+        ],
+        "report": [
+            "(1)主诉：发热。\n(2)现病史：患者出现发热，午睡后或者夜里发热明显，伴咳嗽、咳痰，去医院就诊检查血常规，口服达菲和雾化治疗，效果不佳。\n(3)辅助检查：血常规。\n(4)既往史：无。\n(5)诊断：支气管炎。\n(6)建议：继续雾化治疗，医院就诊听诊肺部。",
+            "(1)主诉：发热咳嗽三天。\n(2)现病史：患儿出现发热咳嗽三天，达菲治疗中。\n(3)辅助检查：暂缺。\n(4)既往史：不详。\n(5)诊断：小儿支气管炎。\n(6)建议：雾化，肺部听诊。"
+        ],
+        "implicit_info": {
+            "Symptom": {
+                "感冒": "1",
+                "发热": "1",
+                "恶心": "1",
+                "咳嗽": "1",
+                "痰": "1"
+            }
+        }
+    },
+    "10328090": {
+        "diagnosis": "小儿发热",
+        "self_report": "小孩有点发烧，四肢冷，是怎么回事？",
+        "dialogue": [
+            {
+                "sentence_id": "1",
+                "speaker": "医生",
+                "sentence": "你好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "2",
+                "speaker": "医生",
+                "sentence": "手脚冰凉吗？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "B-Symptom I-Symptom I-Symptom I-Symptom O O",
+                "symptom_norm": [
+                    "四肢厥冷"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "3",
+                "speaker": "患者",
+                "sentence": "是的",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "4",
+                "speaker": "患者",
+                "sentence": "有点发抖，39.2",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O B-Symptom I-Symptom I-Symptom I-Symptom",
+                "symptom_norm": [
+                    "高热"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "5",
+                "speaker": "医生",
+                "sentence": "那说明体温还在上升",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "6",
+                "speaker": "医生",
+                "sentence": "吃药了吗？",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "7",
+                "speaker": "患者",
+                "sentence": "我给他吃了退烧药，",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O B-Drug_Category I-Drug_Category I-Drug_Category O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "8",
+                "speaker": "患者",
+                "sentence": "还需要吃什么药吗？",
+                "dialogue_act": "Request-Drug_Recommendation",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "9",
+                "speaker": "医生",
+                "sentence": "多喝温水",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "10",
+                "speaker": "医生",
+                "sentence": "除了发烧还有其他不舒服吗？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O B-Symptom I-Symptom O O O O O O O O O",
+                "symptom_norm": [
+                    "发热"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "11",
+                "speaker": "患者",
+                "sentence": "有点抖",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "12",
+                "speaker": "患者",
+                "sentence": "他才一岁不会说话别的不知道",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "13",
+                "speaker": "医生",
+                "sentence": "体温还在上升",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "14",
+                "speaker": "医生",
+                "sentence": "退烧药吃了多久了",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "B-Drug_Category I-Drug_Category I-Drug_Category O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "15",
+                "speaker": "患者",
+                "sentence": "10分钟了",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "16",
+                "speaker": "医生",
+                "sentence": "还没有发挥作用",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "17",
+                "speaker": "患者",
+                "sentence": "现在怎么办",
+                "dialogue_act": "Request-Precautions",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "18",
+                "speaker": "医生",
+                "sentence": "可以用手搓宝宝的手脚",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "19",
+                "speaker": "医生",
+                "sentence": "或者热敷手脚",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "20",
+                "speaker": "患者",
+                "sentence": "那我带的有阿奇霉素颗粒，柴胡退热的",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O B-Drug I-Drug I-Drug I-Drug I-Drug I-Drug O B-Drug I-Drug O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "21",
+                "speaker": "医生",
+                "sentence": "你刚才吃的什么药？药名",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "22",
+                "speaker": "患者",
+                "sentence": "美林",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "B-Drug I-Drug",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "23",
+                "speaker": "医生",
+                "sentence": "可以的",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "24",
+                "speaker": "医生",
+                "sentence": "至少要吃药半小时后再量体温",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "25",
+                "speaker": "医生",
+                "sentence": "宝宝除了发烧，有打喷嚏流鼻涕咳嗽吗？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O B-Symptom I-Symptom O O B-Symptom I-Symptom I-Symptom B-Symptom I-Symptom I-Symptom B-Symptom I-Symptom O O",
+                "symptom_norm": [
+                    "发热",
+                    "喷嚏",
+                    "鼻流涕",
+                    "咳嗽"
+                ],
+                "symptom_type": [
+                    "1",
+                    "2",
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "26",
+                "speaker": "患者",
+                "sentence": "阿奇和退热的吃吗",
+                "dialogue_act": "Request-Drug_Recommendation",
+                "BIO_label": "B-Drug I-Drug O B-Drug_Category I-Drug_Category O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "27",
+                "speaker": "患者",
+                "sentence": "有点咳嗽流鼻涕",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O B-Symptom I-Symptom B-Symptom I-Symptom I-Symptom",
+                "symptom_norm": [
+                    "咳嗽",
+                    "鼻流涕"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "28",
+                "speaker": "医生",
+                "sentence": "清鼻涕还是黄鼻涕",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "B-Symptom I-Symptom I-Symptom O O B-Symptom I-Symptom I-Symptom",
+                "symptom_norm": [
+                    "鼻流涕",
+                    "鼻流涕"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "29",
+                "speaker": "患者",
+                "sentence": "清的",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "30",
+                "speaker": "医生",
+                "sentence": "偶尔咳嗽还是比较频繁，能听到嗓子里有痰吗？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O B-Symptom I-Symptom O O O O O O O O O O O O O O B-Symptom O O",
+                "symptom_norm": [
+                    "咳嗽",
+                    "痰"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "31",
+                "speaker": "患者",
+                "sentence": "不是一直咳嗽，下午开始有点咳嗽",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O B-Symptom I-Symptom O O O O O O O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "咳嗽",
+                    "咳嗽"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "32",
+                "speaker": "医生",
+                "sentence": "阿奇可以吃，再加上抗病毒的",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "B-Drug I-Drug O O O O O O O B-Drug_Category I-Drug_Category I-Drug_Category O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "33",
+                "speaker": "患者",
+                "sentence": "知道谢谢，",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "34",
+                "speaker": "医生",
+                "sentence": "不客气",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "35",
+                "speaker": "医生",
+                "sentence": "一定要让宝宝多喝开水",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "36",
+                "speaker": "患者",
+                "sentence": "阿奇和退烧药隔多久吃",
+                "dialogue_act": "Request-Drug_Recommendation",
+                "BIO_label": "B-Drug I-Drug O B-Drug_Category I-Drug_Category I-Drug_Category O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "37",
+                "speaker": "患者",
+                "sentence": "好的",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "38",
+                "speaker": "医生",
+                "sentence": "退烧药是四小时之内不能重复吃",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "B-Drug_Category I-Drug_Category I-Drug_Category O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "39",
+                "speaker": "医生",
+                "sentence": "阿奇每天吃一次",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "B-Drug I-Drug O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "40",
+                "speaker": "医生",
+                "sentence": "吃过一种再吃另一种",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "41",
+                "speaker": "医生",
+                "sentence": "不用隔很久的",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "42",
+                "speaker": "患者",
+                "sentence": "知道了",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "43",
+                "speaker": "患者",
+                "sentence": "谢谢",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            }
+        ],
+        "report": [
+            "(1) 主诉：发热\n(2) 现病史：患儿发热，鼻流涕。\n(3) 辅助检查：暂缺\n(4) 既往史：不详\n(5) 诊断：呼吸道感染\n(6) 建议：合理降温，观察体温变化。",
+            "(1) 主诉：发热\n(2) 现病史：患儿发热，体温39.2，手脚冰凉，发抖，咳嗽，鼻流涕。现服用美林\n(3) 辅助检查：\n(4) 既往史：\n(5) 诊断：发热待查\n(6) 建议：热敷手脚，多喝水，阿奇霉素，抗病毒药物"
+        ],
+        "implicit_info": {
+            "Symptom": {
+                "高热": "1",
+                "发热": "1",
+                "喷嚏": "1",
+                "鼻流涕": "1",
+                "咳嗽": "1",
+                "痰": "1"
+            }
+        }
+    },
+    "10267989": {
+        "diagnosis": "小儿发热",
+        "self_report": "宝贝五个半月，吃了退烧药现在体温35.5怎么办呢？",
+        "dialogue": [
+            {
+                "sentence_id": "1",
+                "speaker": "医生",
+                "sentence": "您好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "2",
+                "speaker": "患者",
+                "sentence": "你好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "3",
+                "speaker": "患者",
+                "sentence": "宝贝体温低怎么办",
+                "dialogue_act": "Request-Medical_Advice",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "4",
+                "speaker": "医生",
+                "sentence": "什么时候吃退热药",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O O B-Drug_Category I-Drug_Category I-Drug_Category",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "5",
+                "speaker": "医生",
+                "sentence": "出汗多不",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "B-Symptom I-Symptom O O",
+                "symptom_norm": [
+                    "出汗"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "6",
+                "speaker": "患者",
+                "sentence": "五个小时前",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "7",
+                "speaker": "患者",
+                "sentence": "不怎么多",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "8",
+                "speaker": "医生",
+                "sentence": "宝宝现在精神状态怎么样",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "9",
+                "speaker": "医生",
+                "sentence": "吃奶好不",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "10",
+                "speaker": "患者",
+                "sentence": "后面一直酣睡没吃东西呢",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "11",
+                "speaker": "患者",
+                "sentence": "五个小时没吃东西了",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "12",
+                "speaker": "医生",
+                "sentence": "宝宝发烧几天了",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O B-Symptom I-Symptom O O O",
+                "symptom_norm": [
+                    "发热"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "13",
+                "speaker": "医生",
+                "sentence": "咳嗽，流鼻涕，拉肚子不",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "B-Symptom I-Symptom O B-Symptom I-Symptom I-Symptom O B-Symptom I-Symptom I-Symptom O",
+                "symptom_norm": [
+                    "咳嗽",
+                    "鼻流涕",
+                    "腹泻"
+                ],
+                "symptom_type": [
+                    "2",
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "14",
+                "speaker": "患者",
+                "sentence": "有两天了，反复发烧，有时高烧，有时低烧",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O O B-Symptom I-Symptom O O O B-Symptom I-Symptom O O O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "发热",
+                    "高热",
+                    "低热"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "15",
+                "speaker": "医生",
+                "sentence": "宝宝现在精神状态怎么样",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "16",
+                "speaker": "患者",
+                "sentence": "没发烧的时候就很好，发烧就哭闹",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O B-Symptom I-Symptom O O O O O O O B-Symptom I-Symptom O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "发热",
+                    "发热",
+                    "哭闹"
+                ],
+                "symptom_type": [
+                    "0",
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "17",
+                "speaker": "医生",
+                "sentence": "去医院检查没",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O B-Medical_Examination I-Medical_Examination O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "18",
+                "speaker": "医生",
+                "sentence": "哦如果宝宝他要是没有别的表现挺单纯的就是一个体隆鼻开着灯在睡觉有可能跟他吃那个退热药发汗，造成的血管扩张或者还有就是她吃奶没正常见面是哪一行的那个就是体温的能量不足都有关系，",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O B-Drug_Category I-Drug_Category I-Drug_Category O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "19",
+                "speaker": "医生",
+                "sentence": "（空）",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "20",
+                "speaker": "医生",
+                "sentence": "宝宝现在怎么样了？",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            }
+        ],
+        "report": [
+            "(1) 主诉：体温低\n(2) 现病史：体温低\n(3) 辅助检查：\n(4) 既往史：\n(5) 诊断：小儿发热\n(6) 建议：未给。",
+            "(1) 主诉：发热\n(2) 现病史：患儿发热，退热后出现低热。\n(3) 辅助检查：暂缺\n(4) 既往史：不详\n(5) 诊断：发热\n(6) 建议：观察病情变化，合理降温。"
+        ],
+        "implicit_info": {
+            "Symptom": {
+                "出汗": "1",
+                "发热": "1",
+                "咳嗽": "1",
+                "鼻流涕": "1",
+                "腹泻": "1",
+                "高热": "1",
+                "低热": "1",
+                "哭闹": "1"
+            }
+        }
+    },
+    "10491362": {
+        "diagnosis": "小儿发热",
+        "self_report": "宝宝突然发烧37度5浑身没劲，咋办",
+        "dialogue": [
+            {
+                "sentence_id": "1",
+                "speaker": "医生",
+                "sentence": "你好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "2",
+                "speaker": "患者",
+                "sentence": "你好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "3",
+                "speaker": "患者",
+                "sentence": "宝宝发烧37度5",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O B-Symptom I-Symptom B-Symptom I-Symptom I-Symptom I-Symptom",
+                "symptom_norm": [
+                    "发热",
+                    "低热"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "4",
+                "speaker": "患者",
+                "sentence": "还在不",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "5",
+                "speaker": "患者",
+                "sentence": "一直睡觉",
+                "dialogue_act": "Request-Basic_Information",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "6",
+                "speaker": "患者",
+                "sentence": "不知道咋办好了",
+                "dialogue_act": "Request-Medical_Advice",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "7",
+                "speaker": "医生",
+                "sentence": "目前除了发热，乏力，还有别的症状吗",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O B-Symptom I-Symptom O B-Symptom I-Symptom O O O O O O O O",
+                "symptom_norm": [
+                    "发热",
+                    "乏力"
+                ],
+                "symptom_type": [
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "8",
+                "speaker": "医生",
+                "sentence": "化验血常规了吗",
+                "dialogue_act": "Request-Existing_Examination_and_Treatment",
+                "BIO_label": "B-Medical_Examination I-Medical_Examination B-Medical_Examination I-Medical_Examination I-Medical_Examination O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "9",
+                "speaker": "患者",
+                "sentence": "没有",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "10",
+                "speaker": "患者",
+                "sentence": "没去医院",
+                "dialogue_act": "Inform-Existing_Examination_and_Treatment",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "11",
+                "speaker": "患者",
+                "sentence": "就是刚刚突然发烧的",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O B-Symptom I-Symptom O",
+                "symptom_norm": [
+                    "发热"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "12",
+                "speaker": "患者",
+                "sentence": "早上到现在没吃米饭",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "13",
+                "speaker": "患者",
+                "sentence": "进食不正常",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "14",
+                "speaker": "医生",
+                "sentence": "近期有没有感冒",
+                "dialogue_act": "Request-Basic_Information",
+                "BIO_label": "O O O O O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "感冒"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "15",
+                "speaker": "患者",
+                "sentence": "流鼻涕来的",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "B-Symptom I-Symptom I-Symptom O O",
+                "symptom_norm": [
+                    "鼻流涕"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "16",
+                "speaker": "患者",
+                "sentence": "有10多天",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "17",
+                "speaker": "患者",
+                "sentence": "这两天不怎么流了",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "18",
+                "speaker": "患者",
+                "sentence": "基本没有鼻涕了",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O B-Symptom I-Symptom O",
+                "symptom_norm": [
+                    "鼻流涕"
+                ],
+                "symptom_type": [
+                    "0"
+                ]
+            },
+            {
+                "sentence_id": "19",
+                "speaker": "医生",
+                "sentence": "分析病情，考虑发热，流涕，精神差。一般常见的还是感冒引起，一般是呼吸道感染病毒。",
+                "dialogue_act": "Diagnose",
+                "BIO_label": "O O O O O O O B-Symptom I-Symptom O B-Symptom I-Symptom O O O O O O O O O O O O B-Symptom I-Symptom O O O O O O B-Symptom I-Symptom I-Symptom I-Symptom I-Symptom O O O",
+                "symptom_norm": [
+                    "发热",
+                    "鼻流涕",
+                    "感冒",
+                    "呼吸道感染"
+                ],
+                "symptom_type": [
+                    "2",
+                    "2",
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "20",
+                "speaker": "患者",
+                "sentence": "有接触过感冒小朋友",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O O O B-Symptom I-Symptom O O O",
+                "symptom_norm": [
+                    "感冒"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "21",
+                "speaker": "患者",
+                "sentence": "是不是嗓子起疱疹之类的了",
+                "dialogue_act": "Request-Etiology",
+                "BIO_label": "O O O O O O B-Symptom I-Symptom O O O O",
+                "symptom_norm": [
+                    "疱疹"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "22",
+                "speaker": "医生",
+                "sentence": "拍个咽喉部照片我看看",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "23",
+                "speaker": "患者",
+                "sentence": "宝宝不让拍",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "24",
+                "speaker": "患者",
+                "sentence": "我根本看不了",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "25",
+                "speaker": "患者",
+                "sentence": "现在这种情况吃退烧药不",
+                "dialogue_act": "Request-Drug_Recommendation",
+                "BIO_label": "O O O O O O O B-Drug_Category I-Drug_Category I-Drug_Category O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "26",
+                "speaker": "医生",
+                "sentence": "目前的体温物理降温",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "27",
+                "speaker": "医生",
+                "sentence": "如果体温超过38.5，可以口服布洛芬退热。",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "O O O O O O B-Symptom I-Symptom I-Symptom I-Symptom O O O O O B-Drug I-Drug I-Drug B-Symptom I-Symptom O",
+                "symptom_norm": [
+                    "中等度热",
+                    "退热"
+                ],
+                "symptom_type": [
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "28",
+                "speaker": "医生",
+                "sentence": "物理降温的办法，包括多喝水，温水擦拭全身，冷毛巾敷额头等。",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "29",
+                "speaker": "患者",
+                "sentence": "没有退热贴咋办",
+                "dialogue_act": "Request-Precautions",
+                "BIO_label": "O O B-Drug_Category I-Drug_Category I-Drug_Category O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "30",
+                "speaker": "医生",
+                "sentence": "可以用我刚才讲的方法物理降温，也可以泡澡。",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "31",
+                "speaker": "患者",
+                "sentence": "嗯嗯",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "32",
+                "speaker": "医生",
+                "sentence": "观察孩子有没有别的症状，观察体温情况。多喝水，多排尿，会排出热量。",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "33",
+                "speaker": "医生",
+                "sentence": "还在吗",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "34",
+                "speaker": "患者",
+                "sentence": "38度5在吃退烧的对吗",
+                "dialogue_act": "Request-Drug_Recommendation",
+                "BIO_label": "B-Symptom I-Symptom I-Symptom I-Symptom O O O O O O O",
+                "symptom_norm": [
+                    "中等度热"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "35",
+                "speaker": "患者",
+                "sentence": "我家宝宝就是总爱嗓子引起发烧",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O O O O O O O O O O O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "发热"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "36",
+                "speaker": "患者",
+                "sentence": "估计这回也是",
+                "dialogue_act": "Inform-Etiology",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "37",
+                "speaker": "医生",
+                "sentence": "是的。38.5以下的体温，不会对孩子身体有伤害，物理降温就可以。",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O B-Symptom I-Symptom I-Symptom I-Symptom O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [
+                    "中等度热"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "38",
+                "speaker": "患者",
+                "sentence": "现在还是昏睡",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "39",
+                "speaker": "医生",
+                "sentence": "38.5°以上，吃布洛芬退热。如果可能的话，看看扁桃体，咽喉部是否有发炎。",
+                "dialogue_act": "Inform-Medical_Advice",
+                "BIO_label": "B-Symptom I-Symptom I-Symptom I-Symptom O O O O O B-Drug I-Drug I-Drug B-Symptom I-Symptom O O O O O O O O O O O O O O O O O O O O B-Symptom I-Symptom O",
+                "symptom_norm": [
+                    "中等度热",
+                    "退热",
+                    "炎症"
+                ],
+                "symptom_type": [
+                    "2",
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "40",
+                "speaker": "医生",
+                "sentence": "如果扁桃体有肿大，有炎症的话，可以吃点蒲地蓝消炎口服液。",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O B-Drug I-Drug I-Drug I-Drug I-Drug I-Drug I-Drug I-Drug O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "41",
+                "speaker": "患者",
+                "sentence": "嗯嗯一会带去医院看下吧",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "42",
+                "speaker": "医生",
+                "sentence": "好的。就医小儿科，让医生查体，化验血常规，明确病情后治疗。",
+                "dialogue_act": "Inform-Medical_Advice",
+                "BIO_label": "O O O O O O O O O O O O B-Medical_Examination I-Medical_Examination O B-Medical_Examination I-Medical_Examination B-Medical_Examination I-Medical_Examination I-Medical_Examination O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "43",
+                "speaker": "患者",
+                "sentence": "宝宝一直睡觉没事吧",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "44",
+                "speaker": "患者",
+                "sentence": "也不哭闹就是睡觉",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O B-Symptom I-Symptom O O O O",
+                "symptom_norm": [
+                    "哭闹"
+                ],
+                "symptom_type": [
+                    "0"
+                ]
+            },
+            {
+                "sentence_id": "45",
+                "speaker": "医生",
+                "sentence": "考虑还是发热，身体不适，精神有些差。需要查明病情，积极治疗，慢慢会好。",
+                "dialogue_act": "Diagnose",
+                "BIO_label": "O O O O B-Symptom I-Symptom O O O O O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [
+                    "发热"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "46",
+                "speaker": "患者",
+                "sentence": "嗯嗯好的",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "47",
+                "speaker": "患者",
+                "sentence": "我还想问下宝宝指甲有白点是怎么回事",
+                "dialogue_act": "Request-Etiology",
+                "BIO_label": "O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "48",
+                "speaker": "医生",
+                "sentence": "有图片吗，发来看看吧",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "49",
+                "speaker": "患者",
+                "sentence": "（空）",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "50",
+                "speaker": "患者",
+                "sentence": "天天吃指甲盖",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "51",
+                "speaker": "患者",
+                "sentence": "也给补钙铁锌呢",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "52",
+                "speaker": "患者",
+                "sentence": "就这一个有",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "53",
+                "speaker": "医生",
+                "sentence": "基本是正常的，但是有时候考虑也有缺乏微量元素可能，建议这次就医的时候，同时化验个微量元素，看看有没有缺乏，给予相应补充。",
+                "dialogue_act": "Diagnose",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O B-Medical_Examination I-Medical_Examination I-Medical_Examination I-Medical_Examination O O O O O O O O O O O O O O O B-Medical_Examination I-Medical_Examination O B-Medical_Examination I-Medical_Examination I-Medical_Examination I-Medical_Examination O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "54",
+                "speaker": "患者",
+                "sentence": "嗯嗯",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "55",
+                "speaker": "患者",
+                "sentence": "谢谢可",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "56",
+                "speaker": "医生",
+                "sentence": "别客气",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            }
+        ],
+        "report": [
+            "(1) 主诉：发烧伴全身乏力。\n(2) 现病史：患儿无明显诱因下出现发烧伴全身乏力情况，无咳嗽咳痰，无恶心呕吐，无其他明显不适症状。精神状态一般，胃纳一般，余如常。\n(3) 辅助检查：暂无。\n(4) 既往史：既往体健。\n(5) 诊断：小儿发热。\n(6) 建议：积极物理降温，体温升高时予退烧药物服用，必要时及时就医。",
+            "(1) 主诉：鼻流涕、发热、乏力\n(2) 现病史：患儿10天前开始出现鼻流涕，今日出现发热，乏力，体温37.5℃\n(3) 辅助检查：无\n(4) 既往史：无\n(5) 诊断：发热待查\n(6) 建议：及时就诊，完善检查，明确病因，指导治疗；密切观察患儿体温变化，低于38.5℃，物理降温，超过38.5℃，必要时可服用退热药物治疗；注意补充水分。"
+        ],
+        "implicit_info": {
+            "Symptom": {
+                "发热": "1",
+                "低热": "1",
+                "乏力": "1",
+                "感冒": "1",
+                "鼻流涕": "1",
+                "呼吸道感染": "1",
+                "疱疹": "2",
+                "中等度热": "0",
+                "退热": "1",
+                "炎症": "1",
+                "哭闹": "0"
+            }
+        }
+    },
+    "10354589": {
+        "diagnosis": "小儿腹泻",
+        "self_report": "昨天凌晨两点半开始到七点半拉八九次不吐！是食物中毒吗？",
+        "dialogue": [
+            {
+                "sentence_id": "1",
+                "speaker": "医生",
+                "sentence": "你好",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "2",
+                "speaker": "医生",
+                "sentence": "在吗",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "3",
+                "speaker": "患者",
+                "sentence": "在",
+                "dialogue_act": "Other",
+                "BIO_label": "O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "4",
+                "speaker": "医生",
+                "sentence": "为了更好的提供服务，我需要询问您几个与病症相关的问题，感谢您配合。好吗？",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "5",
+                "speaker": "患者",
+                "sentence": "凌晨两点半开始到早七点半拉七八次是食物中药吗？没吐过",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O B-Drug_Category I-Drug_Category O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "6",
+                "speaker": "医生",
+                "sentence": "宝宝现在多大了",
+                "dialogue_act": "Request-Basic_Information",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "7",
+                "speaker": "患者",
+                "sentence": "10岁",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "8",
+                "speaker": "医生",
+                "sentence": "大便是什么形状的",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "9",
+                "speaker": "患者",
+                "sentence": "要挂水还是吃药",
+                "dialogue_act": "Request-Medical_Advice",
+                "BIO_label": "O B-Operation I-Operation O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "10",
+                "speaker": "医生",
+                "sentence": "是水样便还是粥样便",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O B-Symptom I-Symptom I-Symptom O O B-Symptom I-Symptom I-Symptom",
+                "symptom_norm": [
+                    "水样便",
+                    "粥样便"
+                ],
+                "symptom_type": [
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "11",
+                "speaker": "患者",
+                "sentence": "水样",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "水样便"
+                ],
+                "symptom_type": [
+                    "1"
+                ]
+            },
+            {
+                "sentence_id": "12",
+                "speaker": "医生",
+                "sentence": "有没有脓血便",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O B-Symptom I-Symptom I-Symptom",
+                "symptom_norm": [
+                    "脓血便"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "13",
+                "speaker": "患者",
+                "sentence": "没有",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "14",
+                "speaker": "医生",
+                "sentence": "有没有腹痛现象",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O B-Symptom I-Symptom O O",
+                "symptom_norm": [
+                    "腹痛"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "15",
+                "speaker": "患者",
+                "sentence": "肚子疼？",
+                "dialogue_act": "Other",
+                "BIO_label": "B-Symptom I-Symptom I-Symptom O",
+                "symptom_norm": [
+                    "腹痛"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "16",
+                "speaker": "患者",
+                "sentence": "没",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "17",
+                "speaker": "患者",
+                "sentence": "咕咕叫",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "18",
+                "speaker": "医生",
+                "sentence": "宝宝有没有着凉",
+                "dialogue_act": "Request-Basic_Information",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "19",
+                "speaker": "患者",
+                "sentence": "有点",
+                "dialogue_act": "Inform-Basic_Information",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "20",
+                "speaker": "医生",
+                "sentence": "有没有发热",
+                "dialogue_act": "Request-Symptom",
+                "BIO_label": "O O O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "发热"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "21",
+                "speaker": "患者",
+                "sentence": "没发热",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "发热"
+                ],
+                "symptom_type": [
+                    "0"
+                ]
+            },
+            {
+                "sentence_id": "22",
+                "speaker": "患者",
+                "sentence": "没呕吐",
+                "dialogue_act": "Inform-Symptom",
+                "BIO_label": "O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "呕吐"
+                ],
+                "symptom_type": [
+                    "0"
+                ]
+            },
+            {
+                "sentence_id": "23",
+                "speaker": "医生",
+                "sentence": "从描述症状不除外宝宝肠炎",
+                "dialogue_act": "Diagnose",
+                "BIO_label": "O O O O O O O O O O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "肠炎"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "24",
+                "speaker": "医生",
+                "sentence": "建议给宝宝化验一下大便常规，了解有没有白细胞",
+                "dialogue_act": "Inform-Medical_Advice",
+                "BIO_label": "O O O O O B-Medical_Examination I-Medical_Examination O O B-Medical_Examination I-Medical_Examination I-Medical_Examination I-Medical_Examination O O O O O O B-Medical_Examination I-Medical_Examination I-Medical_Examination",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "25",
+                "speaker": "患者",
+                "sentence": "怎么治疗",
+                "dialogue_act": "Request-Drug_Recommendation",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "26",
+                "speaker": "医生",
+                "sentence": "口服肠道微生态药物和蒙脱石散",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "O O B-Drug_Category I-Drug_Category I-Drug_Category I-Drug_Category I-Drug_Category I-Drug_Category I-Drug_Category O B-Drug I-Drug I-Drug I-Drug",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "27",
+                "speaker": "医生",
+                "sentence": "注意多喝水，预防脱水",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O O O B-Symptom I-Symptom",
+                "symptom_norm": [
+                    "脱水"
+                ],
+                "symptom_type": [
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "28",
+                "speaker": "患者",
+                "sentence": "要挂水吗",
+                "dialogue_act": "Request-Medical_Advice",
+                "BIO_label": "O B-Operation I-Operation O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "29",
+                "speaker": "医生",
+                "sentence": "如果宝宝精神差，小便少，或出现发热等现象建议补液治疗",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O B-Symptom I-Symptom I-Symptom O O O O O O O O B-Symptom I-Symptom O O O O O B-Operation I-Operation O O",
+                "symptom_norm": [
+                    "精神软",
+                    "发热"
+                ],
+                "symptom_type": [
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "sentence_id": "30",
+                "speaker": "患者",
+                "sentence": "谢谢",
+                "dialogue_act": "Other",
+                "BIO_label": "O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "31",
+                "speaker": "医生",
+                "sentence": "不用客气",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "32",
+                "speaker": "医生",
+                "sentence": "祝宝宝健康成长",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "33",
+                "speaker": "医生",
+                "sentence": "您再有任何问题可以随时和我联系或留言，我看到后会第一时间回复。",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "34",
+                "speaker": "医生",
+                "sentence": "如果没有其他问题，那就先结束了，好吗？",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "35",
+                "speaker": "患者",
+                "sentence": "喝可乐能补水吗",
+                "dialogue_act": "Request-Precautions",
+                "BIO_label": "O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "36",
+                "speaker": "医生",
+                "sentence": "不可以",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "37",
+                "speaker": "医生",
+                "sentence": "杜绝应用饮料",
+                "dialogue_act": "Inform-Precautions",
+                "BIO_label": "O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "38",
+                "speaker": "患者",
+                "sentence": "喝盐水吗",
+                "dialogue_act": "Request-Precautions",
+                "BIO_label": "O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "39",
+                "speaker": "医生",
+                "sentence": "一般应用口服补液盐",
+                "dialogue_act": "Inform-Drug_Recommendation",
+                "BIO_label": "O O O O O O B-Drug I-Drug I-Drug",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "40",
+                "speaker": "患者",
+                "sentence": "噢",
+                "dialogue_act": "Other",
+                "BIO_label": "O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "41",
+                "speaker": "医生",
+                "sentence": "还有其他问题吗？",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "42",
+                "speaker": "患者",
+                "sentence": "没了？谢谢！满意",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "43",
+                "speaker": "医生",
+                "sentence": "那就结束了，再见",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "44",
+                "speaker": "医生",
+                "sentence": "您再有任何问题可以随时和我联系或留言，我看到后会第一时间回复。",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "45",
+                "speaker": "医生",
+                "sentence": "祝新年快乐，阖家欢乐",
+                "dialogue_act": "Other",
+                "BIO_label": "O O O O O O O O O O",
+                "symptom_norm": [],
+                "symptom_type": []
+            },
+            {
+                "sentence_id": "46",
+                "speaker": "患者",
+                "sentence": "嗯",
+                "dialogue_act": "Other",
+                "BIO_label": "O",
+                "symptom_norm": [],
+                "symptom_type": []
+            }
+        ],
+        "report": [
+            "(1)主诉：腹泻。\n(2)现病史：患儿腹泻，水样便半天。\n(3)辅助检查：暂缺。\n(4)既往史：不详。\n(5)诊断：肠炎不能排除。\n(6)建议：大便常规，口服肠道微生态药物和蒙脱石散。",
+            "(1)主诉：腹泻1天。\n(2)现病史：患者今天凌晨出现腹泻，至今大便7-8次，水样便无脓血，腹鸣明显，无腹痛、发热、呕吐。\n(3)辅助检查：无。\n(4)既往史：无。\n(5)诊断：腹泻。\n(6)建议：建议给宝宝化验一下大便常规，了解有没有白细胞；口服肠道微生态药物和蒙脱石散，注意多喝水，预防脱水。"
+        ],
+        "implicit_info": {
+            "Symptom": {
+                "水样便": "1",
+                "粥样便": "1",
+                "脓血便": "0",
+                "腹痛": "0",
+                "发热": "2",
+                "呕吐": "0",
+                "肠炎": "2",
+                "脱水": "2",
+                "精神软": "2"
+            }
+        }
+    }
+}
